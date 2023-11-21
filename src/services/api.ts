@@ -9,9 +9,9 @@ const api = {
       const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
         params: {
           key: YouTubeAPIKey,
-          q: searchTerm,
           part: 'snippet',
-          maxResults: 12,
+          q: searchTerm,
+          maxResults: 11,
         },
       });
       return response.data.items;
@@ -27,32 +27,15 @@ const api = {
         params: {
             apikey: TicketmasterAPIKey,
             keyword: searchTerm,
-            size: 10,
+            size: 1,
         },
       });
       return response.data || [];
     } catch (error) {
-      console.error('Ocorreu um erro ao buscar:', error);
+      console.error('Ocorreu um erro ao buscar detalhes da banda:', error);
       return [];
     }
   },
 };
 
 export default api;
-
-
-
-// import axios from 'axios';
-
-// const KEY = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
-
-// const api = axios.create({
-//     baseURL:'https://www.goolgeapis.com/youtube/v3/',
-//     params: {
-//         part: 'snippet',
-//         maxResults: 10,
-//         key: KEY
-//     },
-// });
-
-// export default api;
