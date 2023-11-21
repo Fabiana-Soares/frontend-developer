@@ -30,17 +30,17 @@ First, run the development server:
 
 ## Ferramentas utilizadas:
 
- *[x] Next.js
- *[x] React
-   *[x] react-icons
- *[x] Typescript
- *[x] Figma
- *[x] Tailwind
+ * [x] Next.js.
+ * [x] React.
+   * [x] react-icons.
+ * [x] Typescript.
+ * [x] Figma.
+ * [x] Tailwind.
 Chamada da api:
- *[x] Axios
+ *[x] Axios.
 
 
 ## Futuras melhorias
 
- *[ ] Testes unitarios
- *[ ] Modal
+ * [ ] Testes unitários.
+ * [ ] Modal.
